@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="static/autoresize.js"></script>
+    <script src="static/main.js"></script>
+    <title>Nuovo articolo - GGV Editor</title>
+</head>
+<body>
+    <i id="send" title="Pubblica articolo" class="material-icons">send</i>
+    <div id="sidebar">
+        <ul>
+            <li><i title="Aggiungi titolo primario" class="material-icons" id="add_title">title</i></li>
+            <li><i title="Aggiungi sottotitolo" class="material-icons" id="add_subtitle">text_fields</i></li>
+            <li><i title="Aggiungi immagine" class="material-icons" id="add_image">insert_photo</i></li>
+            <li><i title="Aggiungi link" class="material-icons" id="add_link">insert_link</i></li>
+            <li><i title="Aggiungi immagine con link" class="material-icons" id="add_image_link">collections</i></li>
+            <li><i title="Aggiungi pagina" class="material-icons" id="add_page">note_add</i></li>
+        </ul>
+    </div>
+    <div id="root">
+        <h1 contenteditable="true" id="articleTitle" tabindex="1">Nuovo articolo</h1>
+        <span id="author">Autore: Gioele Pannetto</span><br>
+        <textarea id="text" tabindex="2">#Titolo primario</textarea>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel cum beatae, hic quidem quam error illo, reiciendis autem, facere veniam recusandae totam nisi ducimus maiores voluptate. Exercitationem, animi veritatis.
+</body>
+</html>

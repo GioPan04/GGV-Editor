@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Slab', sans-serif;
+}
+#sidebar {
+    background-color: #d6d4d4;
+    width: min-content;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 200px;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#sidebar > ul {
+    list-style-type: none;
+    padding: 15px;
+    padding-left: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+#sidebar > ul > li > i {
+    font-size: 35px;
+}
+#root {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+#articleTitle {
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 6px;
+    outline: none;
+}
+#author {
+    color: rgb(0, 0, 0, .6);
+}
+#text {
+    margin-top: 40px;
+    width: 100%;
+    height: fit-content;
+    resize: none;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.87);
+}
+#send {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+}
