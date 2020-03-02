@@ -65,6 +65,13 @@ $(document).ready(function () {
         insertAtCaret("text", '\n-- NUOVA PAGINA (NON ELIMINARE QUESTA RIGA) --\n#');
         resize();
     });
+    $("#preview").click(function () {
+        var html_content = "";
+        html_content = markdown.toHTML( $('#text').val() );  
+        var win = window.open("", "Title", "toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=780,height=200,top="+(screen.height-400)+",left="+(screen.width-840));
+        win.document.body.innerHTML = html_content;
+        win.document.head.innerHTML = '<link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet"><link rel="stylesheet" href="http://localhost/ggv%20editor/static/preview.css"><title>GGV Editor Preview</title>';
+    });
     function insertAtCaret(areaId, text) {
         var txtarea = document.getElementById(areaId);
         if (!txtarea) {

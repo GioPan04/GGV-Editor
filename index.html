@@ -7,12 +7,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="static/autoresize.js"></script>
+    <script src="static/markdown.min.js"></script>
     <script src="static/main.js"></script>
     <title>Nuovo articolo - GGV Editor</title>
 </head>
 <body>
-    <i id="send" title="Pubblica articolo" class="material-icons">send</i>
+    <div id="actions">
+        <i id="preview" title="Visualizza anteprima" class="material-icons">play_circle_filled</i>
+        <i id="send" title="Pubblica articolo" class="material-icons">send</i>
+    </div>
     <div id="sidebar">
         <ul>
             <li><i title="Aggiungi titolo primario" class="material-icons" id="add_title">title</i></li>
@@ -28,6 +31,5 @@
         <span id="author">Autore: Gioele Pannetto</span><br>
         <textarea id="text" tabindex="2">#Titolo primario</textarea>
     </div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel cum beatae, hic quidem quam error illo, reiciendis autem, facere veniam recusandae totam nisi ducimus maiores voluptate. Exercitationem, animi veritatis.
 </body>
 </html>
